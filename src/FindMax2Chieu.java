@@ -6,19 +6,19 @@ public class FindMax2Chieu {
                 {-11, 119, 7, 21}
         };
         int max = arr[0][0];
-        int columMax = 0;
-        int rowMax = 0;
-        for (int row = 0; row < arr.length; row++) {
-            for (int colum = 0; colum < arr[row].length; colum++) {
-                if (arr[row][colum] > max) {
-                    max = arr[row][colum];
-                    rowMax = row;
-                    columMax = colum;
+        int colum = 0;
+        int row = 0;
+        for (int j = 0; j < arr.length; j++) {
+            for (int i = 0; i < arr[j].length; i++) {
+                if (arr[j][i] > max) {
+                    max = arr[j][i];
+                    row = j;
+                    colum = i;
                 }
             }
         }
-        System.out.println("Element Max Two Dimensional Array:" + max);
-        System.out.println("Index max:[" + rowMax + "]" + "[" + columMax + "]");
+        System.out.println("Element Max Two Dimensional Array: " + max);
+        System.out.println("Index max:[" + row + "]" + "[" + colum + "]" );
     }
     
 }
