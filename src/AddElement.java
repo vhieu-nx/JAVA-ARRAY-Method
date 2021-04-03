@@ -20,6 +20,7 @@ public class AddElement {
         showArray(arr);
 
 
+
     }
     static int[] insert(int[] arr, int n){
         int arrIndex = arr.length -1;
@@ -45,4 +46,18 @@ public class AddElement {
             System.out.print(arr[i] + " ");
         }
     }
+
+//    public static void sortASC(int [] arr) {
+//        int temp = arr[0];
+//        for (int i = 0 ; i < arr.length - 1; i++) {
+//            for (int j = i + 1; j < arr.length; j++) {
+//                if (arr[i] > arr[j]) {
+//                    temp = arr[j];
+//                    arr[j] = arr[i];
+//                    arr[i] = temp;
+//                }
+//            }
+//        }
+//    }
+
 }
