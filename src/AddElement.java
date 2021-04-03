@@ -13,9 +13,9 @@ public class AddElement {
             arr[i] = scanner.nextInt();
         }
         System.out.print("Nhập phần tử n = ");
-        int n = scanner.nextInt();
-        System.out.printf("\nChèn phần tử %d vào mảng.", n);
-        arr = insert(arr, n);
+        int k = scanner.nextInt();
+        System.out.printf("\nChèn phần tử %d vào mảng.", k);
+        arr = insert(arr, k);
         System.out.print("\nMảng sau khi chèn: ");
         showArray(arr);
 
