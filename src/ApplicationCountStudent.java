@@ -1,14 +1,12 @@
 import java.util.Scanner;
 
-public class FindSmallestValue {
+public class ApplicationCountStudent {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         int n = nhapN(scanner);
         int a[] = nhapMang(scanner,n);
         xuatMang(a);
-        int gTNN = timGTNN(a);
-        System.out.println("Gía trị nhỏ nhất là: " + a[gTNN] + " tại vị trí " + gTNN);
+        showListStudent(a);
 
     }
     static int nhapN(Scanner scanner){
@@ -33,16 +31,13 @@ public class FindSmallestValue {
         }
         System.out.println("\n");
     }
-    static int timGTNN(int a[]){
-        int i;
-        int vtmin = 0;
-        int min = a[0];
-        for (i = 1; i < a.length; i++){
-            if (a[i] < min){
-                min = a[i];
-                vtmin = i;
-            }
+    static void showListStudent(int a[]){
+        int count = 0;
+        for (int j = 0; j < a.length; j++) {
+            System.out.print(a[j] + "\t");
+            if (a[j] >= 5 && a[j] <= 10)
+                count++;
         }
-        return vtmin;
+        System.out.print("\n The number of students passing the exam is " + count);
     }
 }
