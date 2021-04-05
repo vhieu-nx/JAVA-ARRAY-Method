@@ -4,6 +4,11 @@ public class CountsCharacter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập vào 1 chuỗi :  ");
+        countCharacter(sc);
+
+
+    }
+    static void countCharacter( Scanner sc){
         String s = sc.next();
         System.out.println("Nhập vào kí tự muốn đếm trong chuỗi" + s);
         char c = sc.next().charAt(0);
@@ -13,6 +18,7 @@ public class CountsCharacter {
                 answer ++;
             }
         }
-        System.out.print( "Số kí tự " + c + " trong chỗi " + s +  " là: "+answer);
+        System.out.print( "Số kí tự " + c + " trong chỗi  " +  s +  " là: "+answer);
+
     }
 }
